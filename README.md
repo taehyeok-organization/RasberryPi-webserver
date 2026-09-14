@@ -1,10 +1,14 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # RasberryPi-webserver
 주혁 굿bbb
 =======
 i# RasberryPi-webserver
 태인이 전봇대
 >>>>>>> ma# RaspberryPi WebServer
+=======
+# RaspberryPi WebServer
+>>>>>>> main
 
 2026학년도 2학기 웹 서버를 이용한 센서 제어
 
@@ -20,4 +24,8 @@ i# RasberryPi-webserver
 5. .env.example 을 .env 로 복사한 뒤 본인 값으로 수정
 
 ## 진행 상황
+<<<<<<< HEAD
 - ch01 : 가상환경 및 개발 환경 설정in
+=======
+- ch01 : 가상환경 및 개발 환경 설정
+>>>>>>> main
