@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 #!/home/ubuntu/student2/venv/bin/python3
-=======
-#!/home/ubuntu/student1/venv/bin/python3
->>>>>>> main
 # -*- coding: utf-8 -*-
 import re
 import sys
