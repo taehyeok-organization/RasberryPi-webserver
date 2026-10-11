@@ -10,11 +10,30 @@
     <div class="container text-center mt-5">
         <h2>LED ON / OFF</h2>
         <div style="height: 200px;">
-            <img id="led" src="/static/off.png" width="100" alt="led">
-        </div>
+		{% if is_on == 1%}
+		<img id="led" src="/static/on.png" width="100" alt="led">
+        	{% else %}
+		<img id="led" src="/static/off.png" width="100" alt="led">
+		{% endif %}
+	</div>
         <input class="btn btn-primary" id="on" type="button" value="ON">
         <input class="btn btn-success" id="off" type="button" value="OFF">
     </div>
+    <h3 class="mt-5">저장된 기록</h4>
+<table class="table">
+    <tr>
+        <th>번호</th>
+        <th>상태</th>
+        <th>시각</th>
+    </tr>
+    {% for r in records %}
+    <tr>
+        <td>{{ r.id }}</td>
+        <td>{% if r.is_on %}켜짐{% else %}꺼짐{% endif %}</td>
+        <td>{{ r.created_at }}</td>
+    </tr>
+    {% endfor %}
+</table>
     <script src="/static/index.js"></script>
 </body>
 </html>
