@@ -14,7 +14,9 @@ GPIO.setup(LED, GPIO.OUT, initial=GPIO.LOW)
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    is_on = GPIO.input(LED)
+    records = led_db.get_records(LED)
+    return render_template('index.html', is_on=is_on, records=records)
 
 # ───── 아래 두 라우트 추가 ─────
 @app.route('/on', methods=['POST'])
